@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NorthwindDataSet4" targetNamespace="http://tempuri.org/NorthwindDataSet4.xsd" xmlns:mstns="http://tempuri.org/NorthwindDataSet4.xsd" xmlns="http://tempuri.org/NorthwindDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="NorthwindConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="NorthwindConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PrimeraPract.Properties.Settings.GlobalReference.Default.NorthwindConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RegionTableAdapter" GeneratorDataComponentClassName="RegionTableAdapter" Name="Region" UserDataComponentName="RegionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="NorthwindConnectionString (Settings)" DbObjectName="Northwind.dbo.Region" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RegionDescription FROM dbo.Region</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RegionDescription" DataSetColumn="RegionDescription" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NorthwindDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NorthwindDataSet4" msprop:Generator_UserDSName="NorthwindDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Region" msprop:Generator_TableClassName="RegionDataTable" msprop:Generator_TableVarName="tableRegion" msprop:Generator_TablePropName="Region" msprop:Generator_RowDeletingName="RegionRowDeleting" msprop:Generator_RowChangingName="RegionRowChanging" msprop:Generator_RowEvHandlerName="RegionRowChangeEventHandler" msprop:Generator_RowDeletedName="RegionRowDeleted" msprop:Generator_UserTableName="Region" msprop:Generator_RowChangedName="RegionRowChanged" msprop:Generator_RowEvArgName="RegionRowChangeEvent" msprop:Generator_RowClassName="RegionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegionDescription" msprop:Generator_ColumnVarNameInTable="columnRegionDescription" msprop:Generator_ColumnPropNameInRow="RegionDescription" msprop:Generator_ColumnPropNameInTable="RegionDescriptionColumn" msprop:Generator_UserColumnName="RegionDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
